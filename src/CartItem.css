@@ -240,4 +240,11 @@
     transition: background-color 0.3s ease;
     margin-top: 40px;
   }
+
+  .Up {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+  }
   

@@ -52,7 +52,7 @@ const CartItem = ({ onContinueShopping }) => {
   };
 
   return (
-    <div className="cart-container">
+    <div className="cart-container" id="uptop">
       <h2 style={{ color: 'black' }}>Total Cart Amount: ${calculateTotalAmount()}</h2>
       <div>
         {cart.map(item => (
@@ -79,6 +79,11 @@ const CartItem = ({ onContinueShopping }) => {
         <button className="get-started-button" onClick={(e) => handleContinueShopping(e)}>Continue Shopping</button>
         <br />
         <button className="get-started-button1" onClick={(e) => handleCheckoutShopping(e)}>Checkout</button>
+      </div>
+      <div className='Up'>
+        <a href='#uptop'>
+            <img src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCIxwaYOGF3-2e8mhiilzrLaV0sN1yMAf5hg&s"  width= {30} height= {30} />
+        </a>
       </div>
     </div>
   );

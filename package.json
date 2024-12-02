@@ -5,9 +5,9 @@
   "type": "module",
   "homepage": "https://HeedlessGentry.github.io/plantShopping",
   "scripts": {
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build", 
     "dev": "vite",
+    "predeploy": "npm run build",
+    "deploy": "gh-page -d dist",
     "build": "vite build",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite build; vite preview --host"
